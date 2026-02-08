@@ -120,17 +120,6 @@
             min-height: 1200px;
         }
 
-        .google-form-wrapper {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .google-form-wrapper iframe {
-            border: none;
-            width: 100%;
-            min-height: 1200px;
-        }
-
         /* Support Section */
         .support-section {
             padding: 80px 0;
@@ -337,7 +326,7 @@
                 <div class="support-card">
                     <h3>Email us</h3>
                     <p>Reach out anytime for expert guidance.</p>
-                    <a href="/cdn-cgi/l/email-protection#e9818c858586c79b8c878c9e8590a98e84888085c78a8684"><span class="__cf_email__" data-cfemail="a3cbc6cfcfcc8dd1c6cdc6d4cfdae3c4cec2cacf8dc0ccce">[email&#160;protected]</span></a>
+                    <a href="mailto:hello.renewly@gmail.com">hello.renewly@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -374,4 +363,13 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"><
+    <script>
+        function handleNewsletter(event) {
+            event.preventDefault();
+            alert('Thanks for joining our community!');
+            event.target.reset();
+            return false;
+        }
+    </script>
+</body>
+</html>
