@@ -127,6 +127,24 @@
             color: #1BAA9C;
         }
 
+        /* Large CTA Button */
+        .btn-cta {
+            padding: 20px 50px;
+            font-size: 20px;
+            font-weight: 700;
+            background: #1BAA9C;
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(27, 170, 156, 0.3);
+            transition: all 0.3s;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(27, 170, 156, 0.4);
+            background: #159885;
+        }
+
         /* Secondary Hero */
         .secondary-hero {
             padding: 80px 0;
@@ -465,6 +483,11 @@
             .btn {
                 padding: 14px 32px;
             }
+
+            .btn-cta {
+                padding: 18px 40px;
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -477,7 +500,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#faq">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -547,13 +570,13 @@
             </div>
 
             <div class="cta-center">
-                <a href="contact.html" class="btn btn-primary">Review your renewal</a>
+                <a href="contact.html" class="btn btn-cta">Review your renewal →</a>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
             <h2>Your questions, answered</h2>
             <p class="faq-intro">Wondering how to save on your next lease? Here's what renters like you ask us most—and how we help you take control of your renewal.</p>
@@ -633,7 +656,7 @@
                     <ul>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#faq">About</a></li>
                     </ul>
                 </div>
             </div>
