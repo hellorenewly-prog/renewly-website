@@ -273,6 +273,135 @@
             margin-top: 60px;
         }
 
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .pricing-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #F7F6F3;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .pricing-main {
+            background: linear-gradient(135deg, #1BAA9C 0%, #426B8C 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .pricing-main h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: white;
+            font-family: 'Nunito', 'Avenir Next', -apple-system, sans-serif;
+            font-weight: 700;
+        }
+
+        .pricing-main p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: white;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .pricing-details {
+            padding: 50px 40px;
+        }
+
+        .pricing-details h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2A2F33;
+            font-family: 'Nunito', 'Avenir Next', -apple-system, sans-serif;
+            font-weight: 700;
+        }
+
+        .pricing-details > p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #2A2F33;
+            margin-bottom: 30px;
+        }
+
+        .pricing-example {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .pricing-example h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #1BAA9C;
+            font-family: 'Nunito', 'Avenir Next', -apple-system, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .example-line {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #F7F6F3;
+            font-size: 16px;
+        }
+
+        .example-line:last-child {
+            border-bottom: none;
+        }
+
+        .example-line.highlight {
+            padding-top: 20px;
+            font-weight: 600;
+            color: #2A2F33;
+        }
+
+        .example-line.small-fee {
+            font-size: 13px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .example-line.small-fee .example-label,
+        .example-line.small-fee .example-value {
+            color: #666;
+            font-weight: 400;
+        }
+
+        .example-line.success {
+            background: #C5F1E6;
+            padding: 20px 20px;
+            margin: 20px -30px -30px;
+            border-radius: 0 0 12px 12px;
+            color: #1BAA9C;
+            font-size: 22px;
+        }
+
+        .example-label {
+            color: #2A2F33;
+        }
+
+        .example-value {
+            color: #1BAA9C;
+            font-weight: 600;
+        }
+
+        .pricing-note {
+            font-style: italic;
+            color: #1BAA9C;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
         /* FAQ Section */
         .faq {
             padding: 100px 0;
@@ -498,6 +627,39 @@
                 padding: 18px 40px;
                 font-size: 18px;
             }
+
+            .pricing-main h2 {
+                font-size: 32px;
+            }
+
+            .pricing-main p {
+                font-size: 18px;
+            }
+
+            .pricing-main {
+                padding: 40px 20px;
+            }
+
+            .pricing-details {
+                padding: 30px 20px;
+            }
+
+            .pricing-example {
+                padding: 20px;
+            }
+
+            .example-line {
+                font-size: 14px;
+            }
+
+            .example-line.small-fee {
+                font-size: 12px;
+            }
+
+            .example-line.success {
+                margin: 20px -20px -20px;
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -583,6 +745,61 @@
 
             <div class="cta-center">
                 <a href="contact.html" class="btn btn-cta">Review your renewal →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-card">
+                <div class="pricing-main">
+                    <h2>Simple, transparent pricing</h2>
+                    <p>No upfront fees. No hidden costs. You only pay when we help you save.</p>
+                </div>
+                
+                <div class="pricing-details">
+                    <h3>How it works</h3>
+                    <p>We take 23% of your total savings. Your savings are calculated as the difference between your landlord's original offer and your final agreed rent, multiplied by your full lease term.</p>
+                    
+                    <div class="pricing-example">
+                        <h4>Example</h4>
+                        <div class="example-line">
+                            <span class="example-label">Original offer:</span>
+                            <span class="example-value">$2,400/month</span>
+                        </div>
+                        <div class="example-line">
+                            <span class="example-label">Final agreed rent:</span>
+                            <span class="example-value">$2,300/month</span>
+                        </div>
+                        <div class="example-line">
+                            <span class="example-label">Monthly savings:</span>
+                            <span class="example-value">$100/month</span>
+                        </div>
+                        <div class="example-line">
+                            <span class="example-label">Lease term:</span>
+                            <span class="example-value">12 months</span>
+                        </div>
+                        <div class="example-line highlight">
+                            <span class="example-label">Total savings:</span>
+                            <span class="example-value">$1,200</span>
+                        </div>
+                        <div class="example-line small-fee">
+                            <span class="example-label">Success fee (23%):</span>
+                            <span class="example-value">$276</span>
+                        </div>
+                        <div class="example-line success">
+                            <span class="example-label"><strong>You keep:</strong></span>
+                            <span class="example-value"><strong>$924</strong></span>
+                        </div>
+                    </div>
+                    
+                    <p class="pricing-note">If we don't help you reduce your rent, you pay nothing. It's that simple.</p>
+                </div>
+            </div>
+
+            <div class="cta-center">
+                <a href="contact.html" class="btn btn-cta">Get started →</a>
             </div>
         </div>
     </section>
